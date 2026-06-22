@@ -1,3 +1,17 @@
+# NOTES
+#
+# Docs
+# ghostty +show-config --default --docs | nvim
+#
+# Fonts
+# ghostty +list-fonts
+#
+# Keybinds
+# ghostty +list-keybinds
+#
+# Config examples
+# https://github.com/search?q=path%3Aghostty%2Fconfig&type=code
+
 # Updates
 auto-update = check
 auto-update-channel = stable
@@ -7,6 +21,7 @@ theme = light:catppuccin-latte.conf,dark:catppuccin-mocha.conf
 
 # Font
 font-size = 18
+font-family = "JetBrains Mono Regular"
 
 # Background
 background-opacity = 1.0
