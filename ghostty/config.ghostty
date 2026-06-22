@@ -14,7 +14,6 @@ background-opacity = 1.0
 # Cursor
 cursor-style = block
 cursor-style-blink = false
-# adjust-cursor-thickness = 1
 shell-integration-features = no-cursor, no-title
 
 # Clipboard settings
@@ -42,3 +41,6 @@ bell-features = system
 
 # Scrollbar
 scrollbar = never
+
+# Close
+confirm-close-surface = false
