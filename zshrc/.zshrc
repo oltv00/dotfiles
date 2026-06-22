@@ -21,16 +21,20 @@ plugins=(
   zsh-completions
   colorize
   bundler
+  zsh-tab-title
 )
 
 # Update time
 zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 zstyle ':omz:update' frequency 13
 
-# Uncomment the following line to disable auto-setting terminal title.
-DISABLE_AUTO_TITLE="true"
+# zsh-tab-title settings
+ZSH_TAB_TITLE_ONLY_FOLDER=true
 
 source $ZSH/oh-my-zsh.sh
+
+# Disabled due to 'zsh-tab-title' plugin
+# ZSH_THEME_TERM_TITLE_IDLE="%~"
 
 # User configuration
 
