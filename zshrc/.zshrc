@@ -1,19 +1,15 @@
-# To fix the broken symlink:
-# ln -sf "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# theme setup
+# Theme setup
 ZSH_THEME="spaceship"
 SPACESHIP_TIME_SHOW=true
 
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
+# Command execution timestamp format in the history command output
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="mm/dd/yyyy"
 
-# plugins
+# Plugins
 plugins=(
   sudo
   git
@@ -31,47 +27,38 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# update time
+# Update time
 export UPDATE_ZSH_DAYS=7
 
-# set your language environment
+# Set your language environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Compilation flags
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+# rvm
 export PATH="$PATH:$HOME/.rvm/bin"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# aliases
-alias glances=/Users/tverdokhleb/Library/Python/2.7/bin/glances # glances
-alias iftop=/usr/local/opt/iftop/sbin/iftop # iftop
-alias tmux='tmux -u' # fix tmux utf8 prompt https://askubuntu.com/questions/410048/utf-8-character-not-showing-properly-in-tmux
-
-# added by travis gem
-[ -f /Users/tverdokhleb/.travis/travis.sh ] && source /Users/tverdokhleb/.travis/travis.sh
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # fastlane
-export PATH="$HOME/.fastlane/bin:$PATH"export PATH="/usr/local/opt/gettext/bin:$PATH"
+export PATH="$HOME/.fastlane/bin:$PATH"
+export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 # flutter
 export PATH="$PATH:$HOME/flutter/bin"
 
-# carthage auto-completion
-autoload -U compinit
-compinit -u
-
-# pyenv - python version manager
+# pyenv
 eval "$(pyenv init --path)"
 export PATH="$HOME/.local/bin:$PATH"
 
+# nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  
+# This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # OLLAMA_FLASH_ATTENTION=1
 # Enables Flash Attention — an optimized algorithm for computing attention in transformers. 
