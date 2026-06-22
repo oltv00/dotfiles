@@ -1,0 +1,44 @@
+# Updates
+auto-update = check
+auto-update-channel = stable
+
+# Theme
+theme = light:catppuccin-latte.conf,dark:catppuccin-mocha.conf
+
+# Font
+font-size = 18
+
+# Background
+background-opacity = 1.0
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+# adjust-cursor-thickness = 1
+shell-integration-features = no-cursor, no-title
+
+# Clipboard settings
+clipboard-read = ask
+clipboard-write = ask
+
+# macOS options
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+macos-window-buttons = hidden
+
+# Working directory
+working-directory = home
+window-inherit-working-directory = false
+tab-inherit-working-directory = false
+split-inherit-working-directory = true
+
+# Window
+window-new-tab-position = end
+
+# Notifications
+notify-on-command-finish = unfocused
+notify-on-command-finish-action = bell, notify
+bell-features = system
+
+# Scrollbar
+scrollbar = never
