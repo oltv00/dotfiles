@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 # Theme setup
 ZSH_THEME="spaceship"
@@ -23,12 +23,16 @@ plugins=(
   bundler
 )
 
+# Update time
+zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+zstyle ':omz:update' frequency 13
+
+# Uncomment the following line to disable auto-setting terminal title.
+DISABLE_AUTO_TITLE="true"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-# Update time
-export UPDATE_ZSH_DAYS=7
 
 # Set your language environment
 export LC_ALL=en_US.UTF-8
