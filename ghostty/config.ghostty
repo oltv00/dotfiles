@@ -47,7 +47,10 @@ tab-inherit-working-directory = false
 split-inherit-working-directory = true
 
 # Window
+window-padding-x = 8
+window-padding-y = 8
 window-new-tab-position = end
+window-save-state = always
 
 # Notifications
 notify-on-command-finish = unfocused
