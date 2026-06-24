@@ -31,6 +31,7 @@ background-opacity = 1.0
 cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor, no-title
+mouse-hide-while-typing = true
 
 # Clipboard settings
 clipboard-read = ask

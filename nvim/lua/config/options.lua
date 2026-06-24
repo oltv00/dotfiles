@@ -15,3 +15,6 @@ vim.opt.hlsearch = false -- don't highlight search results by default
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Copy/Paste to system clipboard
+vim.opt.clipboard = "unnamedplus"
+
