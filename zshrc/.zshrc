@@ -30,6 +30,8 @@ zstyle ':omz:update' frequency 13
 
 # zsh-tab-title settings
 ZSH_TAB_TITLE_ONLY_FOLDER=true
+ZSH_TAB_TITLE_DISABLE_AUTO_TITLE=false
+ZSH_TAB_TITLE_ENABLE_CMD_AND_FOLDER_ONLY=true
 
 source $ZSH/oh-my-zsh.sh
 
