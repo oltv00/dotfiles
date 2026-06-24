@@ -13,13 +13,12 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     os.exit(1)
   end
 end
-vim.opt.rtp:prepend(lazypath)
 
--- Make sure to setup `mapleader` and `maplocalleader` before
--- loading lazy.nvim so that mappings are correct.
--- This is also a good place to setup other settings (vim.opt)
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+-- Put `lazypath` to runtimepath
+-- Note: rtp = runtimepath
+-- Add possibility to find files for neovim on this path
+-- Note: 'echo nvim_list_runtime_paths()'
+vim.opt.runtimepath:prepend(lazypath)
 
 -- Setup lazy.nvim
 require("lazy").setup({
