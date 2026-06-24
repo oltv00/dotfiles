@@ -16,8 +16,9 @@
 auto-update = check
 auto-update-channel = stable
 
-# Theme
+# Theme & Appearance
 theme = light:catppuccin-latte.conf,dark:catppuccin-mocha.conf
+window-colorspace = display-p3
 
 # Font
 font-size = 18
@@ -54,8 +55,8 @@ window-save-state = always
 
 # Notifications
 notify-on-command-finish = unfocused
-notify-on-command-finish-action = bell, notify
-bell-features = system
+notify-on-command-finish-action = notify
+notify-on-command-finish-after = 5s
 
 # Scrollbar
 scrollbar = never

@@ -68,13 +68,13 @@ export NVM_DIR="$HOME/.nvm"
 # This loads nvm bash_completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
+# Ollama settings
 # OLLAMA_FLASH_ATTENTION=1
 # Enables Flash Attention — an optimized algorithm for computing attention in transformers. 
 # Instead of storing the full attention matrix in memory at once, it processes it in chunks. 
 # On Apple Silicon, this means faster inference and lower memory usage, especially at long 
 # context lengths like the 32K you set.
 export OLLAMA_FLASH_ATTENTION=1
-
 # OLLAMA_KV_CACHE_TYPE=q8_0
 # The KV (key-value) cache stores intermediate computations so the model doesn't recompute them on every token. 
 # By default it uses f16 (full 16-bit float). Setting it to q8_0 compresses that cache to 8-bit, 
@@ -84,3 +84,9 @@ export OLLAMA_KV_CACHE_TYPE=q8_0
 
 # Ghostty $XDG_CONFIG_HOME setup
 export XDG_CONFIG_HOME="$HOME/.config"
+
+# Claude code settings
+#
+export CLAUDE_CODE_DISABLE_TERMINAL_TITLE=1
+#
+export CLAUDE_CODE_NO_FLICKER=0
