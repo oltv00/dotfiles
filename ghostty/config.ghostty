@@ -19,13 +19,12 @@ auto-update-channel = stable
 # Theme & Appearance
 theme = light:catppuccin-latte.conf,dark:catppuccin-mocha.conf
 window-colorspace = display-p3
+unfocused-split-opacity = 0.97
+background-opacity = 1.0
 
 # Font
 font-size = 18
 font-family = "JetBrains Mono Regular"
-
-# Background
-background-opacity = 1.0
 
 # Cursor
 cursor-style = block
@@ -60,8 +59,17 @@ notify-on-command-finish = unfocused
 notify-on-command-finish-action = notify
 notify-on-command-finish-after = 5s
 
-# Scrollbar
+# Scroll
 scrollbar = never
+mouse-scroll-multiplier = 0.75
 
 # Close
 confirm-close-surface = false
+
+# Keybinds
+keybind = shift+ctrl+option+]=move_tab:+1
+keybind = shift+ctrl+option+[=move_tab:-1
+keybind = shift+arrow_down=jump_to_prompt:1
+keybind = shift+arrow_up=jump_to_prompt:-1
+keybind = super+shift+arrow_down=scroll_page_lines:1
+keybind = super+shift+arrow_up=scroll_page_lines:-1
