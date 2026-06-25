@@ -1,9 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Theme setup
-ZSH_THEME="spaceship"
-SPACESHIP_TIME_SHOW=true
+# Theme setup (disabled due starship theme)
+# ZSH_THEME="spaceship"
+# SPACESHIP_TIME_SHOW=true
 
 # Command execution timestamp format in the history command output
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
@@ -15,13 +15,14 @@ plugins=(
   git
   history
   taskwarrior
-  #tmux
-  #tmuxinator
   zsh-autosuggestions
   zsh-completions
   colorize
   bundler
   zsh-tab-title
+  eza
+  #tmux
+  #tmuxinator
 )
 
 # Update time
@@ -92,3 +93,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export CLAUDE_CODE_DISABLE_TERMINAL_TITLE=1
 #
 export CLAUDE_CODE_NO_FLICKER=0
+
+# Starship theme setup
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+eval "$(starship init zsh)"
