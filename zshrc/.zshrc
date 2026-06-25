@@ -9,44 +9,69 @@ export ZSH="$HOME/.oh-my-zsh"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="mm/dd/yyyy"
 
-# Plugins
+# oh-my-zsh plugins list
 plugins=(
+  # Essential
   sudo
   git
-  history
-  taskwarrior
-  zsh-autosuggestions
-  zsh-completions
-  colorize
-  bundler
-  zsh-tab-title
   eza
+  history
+  history-substring-search
+  colorize
+  copypath
+  aliases
+  alias-finder
+  
+  # Tool specific
+  swiftpm
+  bundler
+  
+  # Custom oh-my-zsh plugins
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  zsh-tab-title
+  
+  # Disabled here, setup below
+  # zsh-completions
+  
+  # Tests
   #tmux
   #tmuxinator
 )
+
+# oh-my-zsh plugins setup
+
+# zsh-tab-title setup
+ZSH_TAB_TITLE_ONLY_FOLDER=true
+ZSH_TAB_TITLE_DISABLE_AUTO_TITLE=false
+ZSH_TAB_TITLE_ENABLE_CMD_AND_FOLDER_ONLY=true
+
+# alias-finder setup
+zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
+zstyle ':omz:plugins:alias-finder' exact yes # disabled by default
+
+# Custom plugins
+
+# zsh-completions setup
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+autoload -U compinit && compinit
+
+# oh-my-zsh setup before source
 
 # Update time
 zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 zstyle ':omz:update' frequency 13
 
-# zsh-tab-title settings
-ZSH_TAB_TITLE_ONLY_FOLDER=true
-ZSH_TAB_TITLE_DISABLE_AUTO_TITLE=false
-ZSH_TAB_TITLE_ENABLE_CMD_AND_FOLDER_ONLY=true
-
 source $ZSH/oh-my-zsh.sh
+
+# User configuration after oh-my-zsh source
 
 # Disabled due to 'zsh-tab-title' plugin
 # ZSH_THEME_TERM_TITLE_IDLE="%~"
 
-# User configuration
-
 # Set your language environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-# Compilation flags
-source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # rvm
 export PATH="$PATH:$HOME/.rvm/bin"
