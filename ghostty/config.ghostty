@@ -12,6 +12,9 @@
 # Config examples
 # https://github.com/search?q=path%3Aghostty%2Fconfig&type=code
 
+# Main settings
+shell-integration = zsh
+
 # Updates
 auto-update = check
 auto-update-channel = stable
@@ -35,11 +38,15 @@ mouse-hide-while-typing = true
 # Clipboard settings
 clipboard-read = ask
 clipboard-write = ask
+clipboard-paste-protection = true
+clipboard-trim-trailing-spaces = true
 
 # macOS options
-macos-titlebar-style = tabs
+# macos-titlebar-style = tabs # best for rectangle
+macos-titlebar-style = hidden # best for aerospace
 macos-titlebar-proxy-icon = hidden
 macos-window-buttons = hidden
+macos-option-as-alt = right
 
 # Working directory
 working-directory = home
@@ -59,17 +66,22 @@ notify-on-command-finish = unfocused
 notify-on-command-finish-action = notify
 notify-on-command-finish-after = 5s
 
-# Scroll
+# Scroll settings
 scrollbar = never
 mouse-scroll-multiplier = 0.75
+scrollback-limit = 100000000
 
 # Close
 confirm-close-surface = false
 
 # Keybinds
+## Tab move
 keybind = shift+ctrl+option+]=move_tab:+1
 keybind = shift+ctrl+option+[=move_tab:-1
+## Scroll
 keybind = shift+arrow_down=jump_to_prompt:1
 keybind = shift+arrow_up=jump_to_prompt:-1
 keybind = super+shift+arrow_down=scroll_page_lines:1
 keybind = super+shift+arrow_up=scroll_page_lines:-1
+keybind = super+page_down=scroll_page_fractional:0.5
+keybind = super+page_up=scroll_page_fractional:-0.5
