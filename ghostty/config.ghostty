@@ -42,8 +42,8 @@ clipboard-paste-protection = true
 clipboard-trim-trailing-spaces = true
 
 # macOS options
-# macos-titlebar-style = tabs # best for rectangle
-macos-titlebar-style = hidden # best for aerospace
+# macos-titlebar-style = tabs # best for rectangle # hidden - for aerospace
+macos-titlebar-style = hidden
 macos-titlebar-proxy-icon = hidden
 macos-window-buttons = hidden
 macos-option-as-alt = right
@@ -74,7 +74,17 @@ scrollback-limit = 100000000
 # Close
 confirm-close-surface = false
 
+# Quick terminal
+quick-terminal-autohide = false
+quick-terminal-position = center
+quick-terminal-screen = main
+quick-terminal-size = 75%,75%
+quick-terminal-animation-duration = 0
+
 # Keybinds
+# super == cmd
+# Global
+keybind = global:option+`=toggle_quick_terminal
 ## Tab move
 keybind = shift+ctrl+option+]=move_tab:+1
 keybind = shift+ctrl+option+[=move_tab:-1
@@ -83,5 +93,7 @@ keybind = shift+arrow_down=jump_to_prompt:1
 keybind = shift+arrow_up=jump_to_prompt:-1
 keybind = super+shift+arrow_down=scroll_page_lines:1
 keybind = super+shift+arrow_up=scroll_page_lines:-1
+keybind = super+shift+j=scroll_page_lines:1
+keybind = super+shift+k=scroll_page_lines:-1
 keybind = super+page_down=scroll_page_fractional:0.5
 keybind = super+page_up=scroll_page_fractional:-0.5

@@ -1,0 +1,3 @@
+brew casks
+- aerospace
+- easydict

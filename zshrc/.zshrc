@@ -117,7 +117,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 #
 export CLAUDE_CODE_DISABLE_TERMINAL_TITLE=1
 #
-export CLAUDE_CODE_NO_FLICKER=0
+export CLAUDE_CODE_NO_FLICKER=1
 
 # Starship theme setup
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
