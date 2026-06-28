@@ -1,3 +1,6 @@
-brew casks
+Tools:
 - aerospace
 - easydict
+- hunk
+- lazygit
+

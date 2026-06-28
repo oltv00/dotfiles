@@ -12,3 +12,8 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
+-- Insert Mode --
+vim.keymap.set("i", "jj", "<esc>", { desc = "Exit insert mode (jj)" })
+vim.keymap.set("i", "jk", "<esc>", { desc = "Exit insert mode (jk)" })
+vim.keymap.set("i", "JJ", "<esc>", { desc = "Exit insert mode (JJ)" })
+

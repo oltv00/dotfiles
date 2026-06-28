@@ -64,6 +64,9 @@ zstyle ':omz:update' frequency 13
 
 source $ZSH/oh-my-zsh.sh
 
+# Aliases
+alias lg='lazygit'
+
 # User configuration after oh-my-zsh source
 
 # Disabled due to 'zsh-tab-title' plugin
@@ -122,3 +125,4 @@ export CLAUDE_CODE_NO_FLICKER=1
 # Starship theme setup
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
+
