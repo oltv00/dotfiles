@@ -17,4 +17,3 @@ vim.g.maplocalleader = " "
 
 -- Copy/Paste to system clipboard
 vim.opt.clipboard = "unnamedplus"
-

@@ -3,4 +3,5 @@ Tools:
 - easydict
 - hunk
 - lazygit
-
+- ripgrep
+- fd

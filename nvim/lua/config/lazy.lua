@@ -25,6 +25,8 @@ require("lazy").setup({
   spec = {
     -- import your plugins
     { import = "plugins" },
+    { "nvim-tree/nvim-web-devicons", opts = {} },
+    { "lewis6991/gitsigns.nvim", opts = {} },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
