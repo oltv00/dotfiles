@@ -5,3 +5,6 @@ Tools:
 - lazygit
 - ripgrep
 - fd
+- capso
+- puremac
+

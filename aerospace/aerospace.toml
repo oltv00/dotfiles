@@ -156,7 +156,7 @@ on-mode-changed = []
     alt-n = 'workspace N'
     alt-o = 'workspace O'
     alt-p = 'workspace P'
-    alt-q = 'workspace Q'
+    # alt-q = 'workspace Q'
     alt-r = 'workspace R'
     # alt-s = 'workspace S'
     alt-t = 'workspace T'
@@ -189,7 +189,7 @@ on-mode-changed = []
     alt-shift-n = 'move-node-to-workspace N'
     alt-shift-o = 'move-node-to-workspace O'
     alt-shift-p = 'move-node-to-workspace P'
-    alt-shift-q = 'move-node-to-workspace Q'
+    # alt-shift-q = 'move-node-to-workspace Q'
     alt-shift-r = 'move-node-to-workspace R'
     # alt-shift-s = 'move-node-to-workspace S'
     alt-shift-t = 'move-node-to-workspace T'
@@ -207,6 +207,7 @@ on-mode-changed = []
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     alt-shift-semicolon = 'mode service'
+    alt-shift-backslash = 'mode service'
 
     # Custom keybinds
     alt-f = 'fullscreen'

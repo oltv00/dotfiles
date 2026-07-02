@@ -36,6 +36,7 @@ shell-integration-features = no-cursor, no-title
 mouse-hide-while-typing = true
 
 # Clipboard settings
+copy-on-select = false
 clipboard-read = ask
 clipboard-write = ask
 clipboard-paste-protection = true
