@@ -7,4 +7,5 @@ Tools:
 - fd
 - capso
 - puremac
+- rbenv
 
