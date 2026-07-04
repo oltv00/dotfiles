@@ -2,4 +2,6 @@ gui:
   theme:
     selectedLineBgColor:
       - reverse
+git:
+  autoFetch: false
 

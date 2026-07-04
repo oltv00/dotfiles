@@ -8,4 +8,5 @@ Tools:
 - capso
 - puremac
 - rbenv
+- nmap
 
