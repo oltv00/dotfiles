@@ -17,3 +17,6 @@ vim.keymap.set("i", "jj", "<esc>", { desc = "Exit insert mode (jj)" })
 vim.keymap.set("i", "jk", "<esc>", { desc = "Exit insert mode (jk)" })
 vim.keymap.set("i", "JJ", "<esc>", { desc = "Exit insert mode (JJ)" })
 
+-- Ntree
+vim.keymap.set('n', '<leader>n', '<cmd>Ntree<cr>', { desc = 'Enter Ntree' })
+
