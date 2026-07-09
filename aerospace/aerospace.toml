@@ -232,3 +232,12 @@ on-mode-changed = []
     alt-shift-end = ['join-with down', 'mode main']
     alt-shift-home = ['join-with up', 'mode main']
     alt-shift-pageDown = ['join-with right', 'mode main']
+
+# Custom settings
+
+# Floating layout setup
+
+[[on-window-detected]]
+if.app-id = "com.utmapp.UTM"
+run = "layout floating"
+
