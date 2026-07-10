@@ -52,7 +52,7 @@ macos-option-as-alt = right
 # Working directory
 working-directory = home
 window-inherit-working-directory = false
-window-inherit-font-size = false
+window-inherit-font-size = true
 tab-inherit-working-directory = false
 split-inherit-working-directory = true
 
@@ -89,6 +89,9 @@ keybind = global:option+`=toggle_quick_terminal
 ## Tab move
 keybind = shift+ctrl+option+]=move_tab:+1
 keybind = shift+ctrl+option+[=move_tab:-1
+## Font size
+keybind = all:super+==increase_font_size:1
+keybind = all:super+-=decrease_font_size:1
 ## Scroll
 keybind = shift+arrow_down=jump_to_prompt:1
 keybind = shift+arrow_up=jump_to_prompt:-1
