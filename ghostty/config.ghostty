@@ -37,8 +37,8 @@ mouse-hide-while-typing = true
 
 # Clipboard settings
 copy-on-select = false
-clipboard-read = ask
-clipboard-write = ask
+clipboard-read = deny
+clipboard-write = deny
 clipboard-paste-protection = true
 clipboard-trim-trailing-spaces = true
 
@@ -90,6 +90,7 @@ keybind = global:option+`=toggle_quick_terminal
 keybind = shift+ctrl+option+]=move_tab:+1
 keybind = shift+ctrl+option+[=move_tab:-1
 ## Font size
+keybind = all:super+0=reset_font_size
 keybind = all:super+==increase_font_size:1
 keybind = all:super+-=decrease_font_size:1
 ## Scroll
