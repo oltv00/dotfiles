@@ -9,4 +9,5 @@ Tools:
 - puremac
 - rbenv
 - nmap
+- yaak
 

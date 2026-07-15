@@ -60,7 +60,9 @@ split-inherit-working-directory = true
 window-padding-x = 8
 window-padding-y = 8
 window-new-tab-position = end
-window-save-state = always
+# To fix quick-terminal-size, have to use window-save-state = never
+# window-save-state = always
+window-save-state = never
 
 # Notifications
 notify-on-command-finish = unfocused
