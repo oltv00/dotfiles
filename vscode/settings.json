@@ -1,0 +1,132 @@
+{
+    // extensions
+    "extensions.autoUpdate": "off",
+
+    // Custom UI Style extension
+    // https://github.com/subframe7536/vscode-custom-ui-style
+    "custom-ui-style.electron": {
+        "frame": false,
+        "roundedCorners": true
+    },
+
+    // NVim extension
+    // https://github.com/HenryTSZ/NVim
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+
+    // Git History Diff extension
+    // https://github.com/huizhougit/githd
+    "githd.blameView.enabled": "disabled",
+
+    // Markdown All in One extension
+    // https://github.com/yzhang-gh/vscode-markdown
+    "markdown.extension.toc.updateOnSave": false,
+
+    // Center Editor Window extension
+    // https://github.com/kaiwood/vscode-center-editor-window
+    "center-editor-window.typewriterScrollModeSmooth": true,
+
+    // Claude Code for VS Code extension
+    // https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code
+    "claudeCode.preferredLocation": "sidebar",
+
+    // workbench
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.sideBar.location": "left",
+    "workbench.colorTheme": "Catppuccin Latte",
+    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+    "workbench.startupEditor": "none",
+    "workbench.preferredLightColorTheme": "Catppuccin Latte",
+    "workbench.activityBar.compact": true,
+    "workbench.activityBar.location": "top",
+    "workbench.browser.showInTitleBar": false,
+    "workbench.navigationControl.enabled": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.showTabs": "single",
+    "workbench.experimental.modernUI": false,
+
+    // window
+    "window.autoDetectColorScheme": true,
+    "window.autoDetectHighContrast": false,
+    "window.zoomPerWindow": false,
+    "window.zoomLevel": 2,
+    "window.customTitleBarVisibility": "never",
+    "window.commandCenter": false,
+    "window.openFilesInNewWindow": "on",
+    "window.titleBarStyle": "native",
+
+    // editor
+    "editor.fontSize": 14,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.cursorBlinking": "solid",
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "alt",
+    "editor.suggestSelection": "first",
+    "editor.fontWeight": null,
+    "editor.lineHeight": 18,
+    "editor.inlayHints.enabled": "off",
+    "editor.guides.indentation": false,
+    "editor.guides.bracketPairs": "active",
+    "editor.guides.bracketPairsHorizontal": false,
+    "editor.accessibilitySupport": "off",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.lineNumbers": "relative",
+    "editor.renderControlCharacters": false,
+
+    // diffEditor
+    "diffEditor.renderSideBySide": true,
+
+    // chat
+    "chat.titleBar.openInAgentsWindow.enabled": false,
+
+    // terminal
+    "terminal.integrated.initialHint": false,
+
+    // git
+    "git.autofetch": true,
+
+    // markdown
+    "markdown.preview.fontSize": 16,
+
+    // explorer
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmPasteNative": false,
+
+    // zenMode
+    "zenMode.fullScreen": false,
+    "zenMode.showTabs": "none",
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
+
+    // security
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // telemetry
+    "telemetry.feedback.enabled": false,
+    "telemetry.telemetryLevel": "off",
+
+    // search
+    "search.useIgnoreFiles": false,
+
+    // defaultFormatter
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
+}
