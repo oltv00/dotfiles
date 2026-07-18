@@ -10,4 +10,5 @@ Tools:
 - rbenv
 - nmap
 - yaak
-
+- docker/tap/sbx
+- uv

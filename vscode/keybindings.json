@@ -143,5 +143,9 @@
         "key": "down",
         "command": "cursorDown",
         "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+j",
+        "command": "workbench.action.toggleMaximizedPanel"
     }
 ]
