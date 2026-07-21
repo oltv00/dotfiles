@@ -5,8 +5,7 @@
     // Custom UI Style extension
     // https://github.com/subframe7536/vscode-custom-ui-style
     "custom-ui-style.electron": {
-        "frame": false,
-        "roundedCorners": true
+        "frame": false
     },
 
     // NVim extension
@@ -19,6 +18,18 @@
         {
             "before": ["j", "k"],
             "after": ["<Esc>"]
+        }
+    ],
+
+    "vim.useCtrlKeys": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["u"],
+            "commands": ["undo"]
+        },
+        {
+            "before": ["<C-r>"],
+            "commands": ["redo"]
         }
     ],
 
@@ -52,16 +63,18 @@
     "workbench.editor.enablePreview": false,
     "workbench.editor.showTabs": "single",
     "workbench.experimental.modernUI": false,
+    "workbench.panel.opensMaximized": "always",
+    "workbench.tips.enabled": false,
 
     // window
+    "window.titleBarStyle": "native",
+    "window.customTitleBarVisibility": "never",
     "window.autoDetectColorScheme": true,
     "window.autoDetectHighContrast": false,
     "window.zoomPerWindow": false,
-    "window.zoomLevel": 2,
-    "window.customTitleBarVisibility": "never",
     "window.commandCenter": false,
     "window.openFilesInNewWindow": "on",
-    "window.titleBarStyle": "native",
+    "window.zoomLevel": 2,
 
     // editor
     "editor.fontSize": 14,
@@ -128,5 +141,5 @@
     },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
-    }
+    },
 }

@@ -12,3 +12,4 @@ Tools:
 - yaak
 - docker/tap/sbx
 - uv
+- podman
