@@ -13,3 +13,5 @@ Tools:
 - docker/tap/sbx
 - uv
 - podman
+- handy
+
