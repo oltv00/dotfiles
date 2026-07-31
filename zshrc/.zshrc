@@ -107,6 +107,8 @@ export OLLAMA_FLASH_ATTENTION=1
 # which cuts its memory footprint roughly in half with negligible quality loss. 
 # With a 32K context window, the KV cache can get large — this keeps it manageable.
 export OLLAMA_KV_CACHE_TYPE=q8_0
+# Keeps it warm between agent turns instead of reloading.
+export OLLAMA_KEEP_ALIVE=30m
 
 # Ghostty $XDG_CONFIG_HOME setup
 export XDG_CONFIG_HOME="$HOME/.config"

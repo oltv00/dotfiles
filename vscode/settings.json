@@ -95,6 +95,9 @@
     "editor.lineNumbers": "relative",
     "editor.renderControlCharacters": false,
 
+    // Update
+    "update.mode": "manual",
+
     // diffEditor
     "diffEditor.renderSideBySide": true,
 
