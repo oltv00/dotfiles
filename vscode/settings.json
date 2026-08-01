@@ -65,6 +65,7 @@
     "workbench.experimental.modernUI": false,
     "workbench.panel.opensMaximized": "always",
     "workbench.tips.enabled": false,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
 
     // window
     "window.titleBarStyle": "native",
@@ -94,6 +95,9 @@
     "editor.scrollbar.vertical": "hidden",
     "editor.lineNumbers": "relative",
     "editor.renderControlCharacters": false,
+
+    // files
+    "files.autoSave": "afterDelay",
 
     // Update
     "update.mode": "manual",
@@ -144,5 +148,5 @@
     },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
-    },
+    }
 }

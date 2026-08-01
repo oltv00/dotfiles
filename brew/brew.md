@@ -14,4 +14,5 @@ Tools:
 - uv
 - podman
 - handy
+- codex
 
