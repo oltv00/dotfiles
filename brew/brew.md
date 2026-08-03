@@ -15,4 +15,5 @@ Tools:
 - podman
 - handy
 - codex
+- huggingface-cli
 

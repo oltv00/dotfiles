@@ -31,7 +31,7 @@ font-family = "JetBrains Mono Regular"
 
 # Cursor
 cursor-style = block
-cursor-style-blink = false
+cursor-style-blink = true
 shell-integration-features = no-cursor, no-title
 mouse-hide-while-typing = true
 

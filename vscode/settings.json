@@ -80,7 +80,7 @@
     // editor
     "editor.fontSize": 14,
     "editor.fontFamily": "JetBrains Mono",
-    "editor.cursorBlinking": "solid",
+    "editor.cursorBlinking": "blink",
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "alt",
     "editor.suggestSelection": "first",
@@ -148,5 +148,6 @@
     },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
-    }
+    },
+    "window.confirmSaveUntitledWorkspace": false
 }
