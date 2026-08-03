@@ -10,6 +10,8 @@ vim.opt.expandtab = true -- inserts space characters instead of using tabs
 
 -- Search
 vim.opt.hlsearch = false -- don't highlight search results by default
+vim.opt.ignorecase = true -- make searches case-insensitive...
+vim.opt.smartcase = true -- ...unless the pattern contains uppercase (then case-sensitive)
 
 -- Set leader key
 vim.g.mapleader = " "
