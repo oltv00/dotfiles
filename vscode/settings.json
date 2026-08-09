@@ -49,6 +49,10 @@
     // https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code
     "claudeCode.preferredLocation": "sidebar",
 
+    // LeetCode extension
+    // https://marketplace.visualstudio.com/items?itemName=LeetCode.vscode
+    // "leetcode.nodePath": "~/.nvm/versions/node/v24.16.0/bin/node",
+
     // workbench
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.sideBar.location": "left",
@@ -61,9 +65,8 @@
     "workbench.browser.showInTitleBar": false,
     "workbench.navigationControl.enabled": false,
     "workbench.editor.enablePreview": false,
-    "workbench.editor.showTabs": "single",
     "workbench.experimental.modernUI": false,
-    "workbench.panel.opensMaximized": "always",
+    "workbench.panel.opensMaximized": "preserve",
     "workbench.tips.enabled": false,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
 
@@ -124,7 +127,6 @@
 
     // zenMode
     "zenMode.fullScreen": false,
-    "zenMode.showTabs": "none",
     "zenMode.centerLayout": false,
     "zenMode.hideLineNumbers": false,
 
@@ -149,5 +151,14 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "window.confirmSaveUntitledWorkspace": false
+    "window.confirmSaveUntitledWorkspace": false,
+    "zenMode.showTabs": "none",
+    "window.dialogStyle": "custom",
+    "leetcode.workspaceFolder": "/Users/oltv00/.leetcode",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
 }

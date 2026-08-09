@@ -1,4 +1,5 @@
 Tools:
+- htop
 - aerospace
 - easydict
 - hunk
@@ -16,4 +17,7 @@ Tools:
 - handy
 - codex
 - huggingface-cli
-
+- ffmpeg 
+- opencode
+- android-platform-tools
+- yt-dlp
