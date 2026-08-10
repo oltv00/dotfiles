@@ -21,3 +21,6 @@ Tools:
 - opencode
 - android-platform-tools
 - yt-dlp
+- jj
+- motrix
+
