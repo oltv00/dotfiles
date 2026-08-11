@@ -23,4 +23,5 @@ Tools:
 - yt-dlp
 - jj
 - motrix
+- cmake
 

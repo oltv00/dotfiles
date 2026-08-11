@@ -105,8 +105,8 @@ keybind = super+shift+arrow_up=scroll_page_lines:-3
 keybind = super+shift+j=scroll_page_lines:3
 keybind = super+shift+k=scroll_page_lines:-3
 
-# keybind = super+shift+d=scroll_page_lines:12
-keybind = super+shift+u=scroll_page_lines:-12
+keybind = super+ctrl+d=scroll_page_lines:12
+keybind = super+ctrl+u=scroll_page_lines:-12
 
 keybind = super+page_down=scroll_page_fractional:0.75
 keybind = super+page_up=scroll_page_fractional:-0.75
