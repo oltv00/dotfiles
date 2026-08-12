@@ -51,7 +51,7 @@
 
     // LeetCode extension
     // https://marketplace.visualstudio.com/items?itemName=LeetCode.vscode
-    // "leetcode.nodePath": "~/.nvm/versions/node/v24.16.0/bin/node",
+    "leetcode.nodePath": "/usr/local/bin/node",
 
     // workbench
     "workbench.editor.enablePreviewFromQuickOpen": false,
