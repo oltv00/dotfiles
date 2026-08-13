@@ -147,5 +147,9 @@
     {
         "key": "shift+cmd+j",
         "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+shift+cmd+n",
+        "command": "explorer.newFile"
     }
 ]

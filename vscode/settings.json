@@ -160,5 +160,6 @@
         "plaintext": false,
         "markdown": false,
         "scminput": false
-    }
+    },
+    "debug.openDebug": "neverOpen"
 }
