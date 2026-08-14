@@ -69,7 +69,7 @@
     "workbench.panel.opensMaximized": "preserve",
     "workbench.tips.enabled": false,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "workbench.editor.empty.hint": "hidden"
+    "workbench.editor.empty.hint": "hidden",
 
     // window
     "window.titleBarStyle": "native",
