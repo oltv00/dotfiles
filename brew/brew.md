@@ -24,4 +24,6 @@ Tools:
 - jj
 - motrix
 - cmake
+- fio
+- aria2
 

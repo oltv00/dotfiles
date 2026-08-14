@@ -69,6 +69,7 @@
     "workbench.panel.opensMaximized": "preserve",
     "workbench.tips.enabled": false,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.editor.empty.hint": "hidden"
 
     // window
     "window.titleBarStyle": "native",
@@ -140,6 +141,9 @@
     // search
     "search.useIgnoreFiles": false,
 
+    // debug
+    "debug.openDebug": "neverOpen",
+
     // defaultFormatter
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
@@ -160,6 +164,5 @@
         "plaintext": false,
         "markdown": false,
         "scminput": false
-    },
-    "debug.openDebug": "neverOpen"
+    }
 }

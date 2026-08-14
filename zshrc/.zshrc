@@ -66,6 +66,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias lg='lazygit'
+alias dw='aria2c'
 
 # User configuration after oh-my-zsh source
 
