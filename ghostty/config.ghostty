@@ -65,8 +65,9 @@ window-new-tab-position = end
 window-save-state = never
 
 # Notifications
+bell-features = system
 notify-on-command-finish = unfocused
-notify-on-command-finish-action = notify
+notify-on-command-finish-action = notify,bell
 notify-on-command-finish-after = 5s
 
 # Scroll settings
