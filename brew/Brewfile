@@ -1,0 +1,147 @@
+tap "anomalyco/tap"
+tap "coryfklein/tap", trusted: { formulae: ["notif"] }
+tap "docker/tap", trusted: true
+tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae"
+tap "lzhgus/tap"
+tap "modem-dev/tap"
+tap "nikitabobko/tap", trusted: { casks: ["aerospace"] }
+tap "tuist/tuist"
+# Download with resuming and segmented downloading
+brew "aria2"
+# Automatic configure script builder
+brew "autoconf"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Cross-platform make
+brew "cmake"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# TIFF library and utilities
+brew "libtiff"
+# Modern, maintained replacement for ls
+brew "eza"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# I/O benchmark and stress test
+brew "fio"
+# Distributed revision control system
+brew "git"
+# Git LFS plugin that uploads and downloads using the Xet protocol
+brew "git-xet"
+# X.509 and CMS library
+brew "libksba"
+# Generic library support script
+brew "libtool"
+# Graph visualization software from AT&T and Bell Labs
+brew "graphviz"
+# YAML Parser
+brew "libyaml"
+# Client library for huggingface.co hub
+brew "hf"
+# Improved top (interactive process viewer)
+brew "htop"
+# Git-compatible distributed version control system
+brew "jj"
+# Simple terminal UI for git commands
+brew "lazygit"
+# LLVM's OpenMP runtime library
+brew "libomp"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Port scanning utility for large networks
+brew "nmap"
+# Create, run, and share large language models (LLMs)
+brew "ollama"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
+# Tool for managing OCI containers and pods
+brew "podman"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
+# Python version management
+brew "pyenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
+# Ruby version manager
+brew "rbenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Plugin and runtime library for using protobuf with Swift
+brew "swift-protobuf"
+# Formatting tool for reformatting Swift code
+brew "swiftformat"
+# Terminal multiplexer
+brew "tmux"
+# Markup-based typesetting system
+brew "typst"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# Little beautifier tool for xcodebuild
+brew "xcbeautify"
+# Build server protocol implementation for integrating Xcode with sourcekit-lsp
+brew "xcode-build-server"
+# Generate your Xcode project from a spec file and your folder structure
+brew "xcodegen"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# General-purpose lossless data-compression library
+brew "zlib"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode", trusted: true
+# Custom macOS statusbar with shell plugin, interaction and graph support
+brew "felixkratz/formulae/sketchybar", trusted: true
+# Desktop-inspired terminal diff viewer for agent-authored changesets
+brew "modem-dev/tap/hunk", trusted: true
+# Android SDK component
+cask "android-platform-tools"
+# Open-source screenshot and screen recording for macOS
+cask "lzhgus/tap/capso", trusted: true
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
+# Dictionary and translator app
+cask "easydict"
+cask "font-hack-nerd-font"
+# Speech to text application
+cask "handy"
+# Open-source download manager
+cask "motrix"
+# Open-source application manager and system cleaner
+cask "puremac"
+# Build, run, and govern agents across the software development lifecycle
+cask "docker/tap/sbx", trusted: true
+# REST, GraphQL and gRPC client
+cask "yaak"
+vscode "catppuccin.catppuccin-vsc"
+vscode "esbenp.prettier-vscode"
+vscode "henrytsz.nvim"
+vscode "huizhou.githd"
+vscode "idleberg.applescript"
+vscode "jmfirth.vsc-space-block-jumper"
+vscode "kaiwood.center-editor-window"
+vscode "leetcode.vscode-leetcode"
+vscode "llvm-vs-code-extensions.lldb-dap"
+vscode "ms-python.black-formatter"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "subframe7536.custom-ui-style"
+vscode "sumneko.lua"
+vscode "sweetpad.sweetpad"
+vscode "swiftlang.swift-vscode"
+vscode "vadimcn.vscode-lldb"
+vscode "yoojinkoh.leetcode-debugger"
+vscode "yzhang.markdown-all-in-one"
+npm "corepack"
