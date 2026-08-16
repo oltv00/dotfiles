@@ -38,7 +38,7 @@ mouse-hide-while-typing = true
 # Clipboard settings
 copy-on-select = false
 clipboard-read = deny
-clipboard-write = deny
+clipboard-write = allow
 clipboard-paste-protection = true
 clipboard-trim-trailing-spaces = true
 
