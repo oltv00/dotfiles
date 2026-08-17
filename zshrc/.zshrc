@@ -35,8 +35,8 @@ plugins=(
   # zsh-completions
   
   # Tests
-  #tmux
-  #tmuxinator
+  tmux
+  tmuxinator
 )
 
 # oh-my-zsh plugins setup
@@ -104,12 +104,33 @@ export OLLAMA_KEEP_ALIVE=30m
 export XDG_CONFIG_HOME="$HOME/.config"
 
 # Claude code settings
-#
 export CLAUDE_CODE_DISABLE_TERMINAL_TITLE=1
-#
 export CLAUDE_CODE_NO_FLICKER=1
 
 # Starship theme setup
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
+
+# Notify on slow command finish in an unfocused tmux pane
+autoload -Uz add-zsh-hook 2>/dev/null
+_nt_preexec() { _nt_start=$(date +%s); _nt_cmd="$1"; }
+_nt_precmd() {
+  local now=$(date +%s)
+  if [[ -n "$TMUX" && -n "$_nt_cmd" ]]; then
+    local dur=$(( now - ${_nt_start:-$now} ))
+    if (( dur >= 5 )); then
+      local flags=$(tmux display-message -p -t "$TMUX_PANE" '#{client_flags}' 2>/dev/null)
+      if [[ "$flags" != focused ]]; then
+        local msg="Finished: ${_nt_cmd//\"/\\\"}"
+        osascript -e "display notification \"${(b)msg}\" with title \"tmux\"" >/dev/null 2>&1
+      fi
+    fi
+  fi
+  _nt_start=$(date +%s); _nt_cmd=
+}
+add-zsh-hook preexec _nt_preexec
+add-zsh-hook precmd  _nt_precmd
+
+# Open tmux by default
+# if [ -z "$TMUX" ]; then tmux; fi
 
