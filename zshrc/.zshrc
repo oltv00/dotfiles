@@ -114,6 +114,9 @@ eval "$(starship init zsh)"
 # tmux notifications
 source "$HOME/dotfiles/tmux/tmux-notify.zsh"
 
+# mactop theme selection wrapper
+source "$HOME/dotfiles/mactop/mactop.zsh"
+
 # Open tmux by default
 if [ -z "$TMUX" ]; then tmux; fi
 

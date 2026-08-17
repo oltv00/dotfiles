@@ -1,0 +1,16 @@
+{
+  "foreground": "#4C4F69",
+  "background": "#EFF1F5",
+  "cpu": "#40A02B",
+  "gpu": "#1E66F5",
+  "memory": "#DF8E1D",
+  "ane": "#8839EF",
+  "bandwidth": "#04A5E5",
+  "network": "#179299",
+  "power": "#D20F39",
+  "thunderbolt": "#EA76CB",
+  "processList": "#4C4F69",
+  "processListDim": "#8C8FA1",
+  "processListSelected": "#EFF1F5",
+  "systemInfo": "#1E66F5"
+}
