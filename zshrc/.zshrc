@@ -112,7 +112,7 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
 # tmux notifications
-source "$HOME/dotfiles/tmux/tmux-notify.zsh"
+# source "$HOME/dotfiles/tmux/tmux-notify.zsh"
 
 # mactop theme selection wrapper
 source "$HOME/dotfiles/mactop/mactop.zsh"
