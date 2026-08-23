@@ -144,6 +144,9 @@
     // debug
     "debug.openDebug": "neverOpen",
 
+    // python
+    "python.analysis.typeCheckingMode": "standard",
+
     // defaultFormatter
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
