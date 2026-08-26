@@ -3,6 +3,7 @@
   "theme": "#4C4F69",
   "background": "#EFF1F5",
   "interval": 5000,
+  "sort_column": 4,
   "sort_reverse": false,
   "custom_theme": {
     "foreground": "#4C4F69",
