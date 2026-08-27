@@ -1,0 +1,25 @@
+#!/bin/sh
+
+if defaults read -g AppleInterfaceStyle 2>/dev/null | grep -qx 'Dark'; then
+  theme='catppuccin-mocha'
+else
+  theme='catppuccin-latte'
+fi
+
+case "${1:-diff}" in
+  diff|show|patch|pager)
+    if [ "$#" -eq 0 ]; then
+      exec hunk diff --theme "$theme"
+    fi
+
+    command_name=$1
+    shift
+    exec hunk "$command_name" --theme "$theme" "$@"
+    ;;
+
+  *)
+    # No explicit Hunk subcommand: treat arguments as hunk diff arguments.
+    exec hunk diff --theme "$theme" "$@"
+    ;;
+esac
+

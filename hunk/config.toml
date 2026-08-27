@@ -1,0 +1,6 @@
+# Replaced with bin/hdiff
+# theme = "auto"
+sidebar = false
+menu_bar = false
+prompt_save_view_preferences = false
+

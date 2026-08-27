@@ -77,12 +77,10 @@ alias dw='aria2c'
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# fastlane
+# PATH setup
 export PATH="$HOME/.fastlane/bin:$PATH"
-export PATH="/usr/local/opt/gettext/bin:$PATH"
-
-# flutter
-export PATH="$PATH:$HOME/flutter/bin"
+export PATH="$HOME/flutter/bin:$PATH"
+export PATH="$HOME/dotfiles/bin:$PATH"
 
 # pyenv
 eval "$(pyenv init --path)"
