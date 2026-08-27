@@ -45,13 +45,10 @@
     // https://github.com/kaiwood/vscode-center-editor-window
     "center-editor-window.typewriterScrollModeSmooth": true,
 
-    // Claude Code for VS Code extension
-    // https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code
-    "claudeCode.preferredLocation": "sidebar",
-
     // LeetCode extension
     // https://marketplace.visualstudio.com/items?itemName=LeetCode.vscode
     "leetcode.nodePath": "/usr/local/bin/node",
+    "leetcode.workspaceFolder": "/Users/oltv00/.leetcode",
 
     // workbench
     "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -80,6 +77,8 @@
     "window.commandCenter": false,
     "window.openFilesInNewWindow": "on",
     "window.zoomLevel": 2,
+    "window.confirmSaveUntitledWorkspace": false,
+    "window.dialogStyle": "custom",
 
     // editor
     "editor.fontSize": 14,
@@ -130,6 +129,7 @@
     "zenMode.fullScreen": false,
     "zenMode.centerLayout": false,
     "zenMode.hideLineNumbers": false,
+    "zenMode.showTabs": "none",
 
     // security
     "security.workspace.trust.untrustedFiles": "open",
@@ -144,6 +144,14 @@
     // debug
     "debug.openDebug": "neverOpen",
 
+    // copilot
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+
     // python
     "python.analysis.typeCheckingMode": "standard",
 
@@ -157,15 +165,5 @@
     },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "window.confirmSaveUntitledWorkspace": false,
-    "zenMode.showTabs": "none",
-    "window.dialogStyle": "custom",
-    "leetcode.workspaceFolder": "/Users/oltv00/.leetcode",
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
     }
 }
