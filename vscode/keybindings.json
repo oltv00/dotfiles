@@ -151,5 +151,9 @@
     {
         "key": "ctrl+shift+cmd+n",
         "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "workbench.action.quickTextSearch"
     }
 ]
