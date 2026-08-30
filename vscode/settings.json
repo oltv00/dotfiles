@@ -154,11 +154,18 @@
 
     // python
     "python.analysis.typeCheckingMode": "standard",
+    "python.analysis.autoImportCompletions": true,
 
     // defaultFormatter
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.formatOnSave": true
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        },
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
