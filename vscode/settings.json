@@ -155,6 +155,9 @@
     // python
     "python.analysis.typeCheckingMode": "standard",
 
+    // ruff
+    "ruff.configurationPreference": "filesystemFirst",
+
     // defaultFormatter
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff",
