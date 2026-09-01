@@ -90,7 +90,7 @@
     "editor.fontWeight": null,
     "editor.lineHeight": 18,
     "editor.inlayHints.enabled": "off",
-    "editor.guides.indentation": false,
+    "editor.guides.indentation": true,
     "editor.guides.bracketPairs": "active",
     "editor.guides.bracketPairsHorizontal": false,
     "editor.accessibilitySupport": "off",
