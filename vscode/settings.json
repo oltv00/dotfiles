@@ -116,6 +116,7 @@
 
     // git
     "git.autofetch": true,
+    "git.blame.editorDecoration.enabled": false,
 
     // markdown
     "markdown.preview.fontSize": 16,
