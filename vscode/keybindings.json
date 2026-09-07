@@ -124,12 +124,95 @@
         "key": "cmd+; d",
         "command": "workbench.view.scm"
     },
+
     {
         "key": "shift+alt+cmd+-",
         "command": "workbench.action.decreaseViewSize"
     },
+
     {
         "key": "shift+alt+cmd+=",
         "command": "workbench.action.increaseViewSize"
-    }
+    },
+
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+
+    {
+        "key": "ctrl+j",
+        "command": "-editor.action.joinLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    {
+        "key": "ctrl+k",
+        "command": "-deleteAllRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+
+    {
+        "key": "cmd+k j",
+        "command": "workbench.action.moveActiveEditorGroupDown"
+    },
+
+    {
+        "key": "cmd+k j",
+        "command": "views.moveViewDown",
+        "when": "focusedView != ''"
+    },
+
+    {
+        "key": "cmd+k l",
+        "command": "views.moveViewRight",
+        "when": "focusedView != ''"
+    },
+
+    {
+        "key": "cmd+k l",
+        "command": "workbench.action.moveActiveEditorGroupRight"
+    },
+
+    {
+        "key": "cmd+k k",
+        "command": "workbench.action.moveActiveEditorGroupUp"
+    },
+
+    {
+        "key": "cmd+k k",
+        "command": "views.moveViewUp",
+        "when": "focusedView != ''"
+    },
+
+    {
+        "key": "cmd+k h",
+        "command": "workbench.action.moveActiveEditorGroupLeft"
+    },
+
+    {
+        "key": "cmd+k h",
+        "command": "views.moveViewLeft",
+        "when": "focusedView != ''"
+    },
 ]
+

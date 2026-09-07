@@ -144,6 +144,8 @@
 
     // debug
     "debug.openDebug": "neverOpen",
+    "debug.internalConsoleOptions": "neverOpen",
+    "debug.focusWindowOnBreak": false,
 
     // copilot
     "github.copilot.enable": {
