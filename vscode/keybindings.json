@@ -214,5 +214,9 @@
         "command": "views.moveViewLeft",
         "when": "focusedView != ''"
     },
+    {
+        "key": "cmd+l e",
+        "command": "leetCodeExplorer.focus"
+    },
 ]
 
