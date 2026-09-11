@@ -214,9 +214,42 @@
         "command": "views.moveViewLeft",
         "when": "focusedView != ''"
     },
+
     {
         "key": "cmd+l e",
         "command": "leetCodeExplorer.focus"
+    },
+
+    {
+        "key": "cmd+k cmd+d",
+        "command": "-editor.action.moveSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+
+    {
+        "key": "cmd+k shift+cmd+left",
+        "command": "-workbench.action.moveEditorLeftInGroup"
+    },
+
+    {
+        "key": "cmd+k shift+cmd+right",
+        "command": "-workbench.action.moveEditorRightInGroup"
+    },
+
+    {
+        "key": "cmd+k cmd+l",
+        "command": "-editor.toggleFold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+
+    {
+        "key": "cmd+k cmd+l",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+
+    {
+        "key": "cmd+k cmd+h",
+        "command": "workbench.action.moveEditorToPreviousGroup"
     },
 ]
 
