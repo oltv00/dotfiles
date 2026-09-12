@@ -129,7 +129,7 @@
     // zenMode
     "zenMode.fullScreen": false,
     "zenMode.centerLayout": false,
-    "zenMode.hideLineNumbers": false,
+    "zenMode.hideLineNumbers": true,
     "zenMode.showTabs": "none",
 
     // security

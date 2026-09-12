@@ -251,5 +251,11 @@
         "key": "cmd+k cmd+h",
         "command": "workbench.action.moveEditorToPreviousGroup"
     },
+
+    {
+        "key": "cmd+c",
+        "command": "-extension.vim_cmd+c",
+        "when": "editorTextFocus && vim.active && vim.overrideCopy && vim.use<D-c> && !inDebugRepl"
+    },
 ]
 
