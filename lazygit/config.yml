@@ -2,6 +2,7 @@ gui:
   theme:
     selectedLineBgColor:
       - reverse
+  screenMode: half
 git:
   autoFetch: false
 
