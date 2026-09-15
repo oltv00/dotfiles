@@ -1,11 +1,5 @@
 [
     {
-        "key": "shift+space",
-        "command": "editor.action.triggerSuggest",
-        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
-    },
-
-    {
         "key": "ctrl+space",
         "command": "-editor.action.triggerSuggest",
         "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
@@ -76,11 +70,6 @@
     {
         "key": "cmd+r",
         "command": "markdown.preview.refresh"
-    },
-
-    {
-        "key": "shift+cmd+j",
-        "command": "workbench.action.toggleMaximizedPanel"
     },
 
     {
@@ -257,5 +246,164 @@
         "command": "-extension.vim_cmd+c",
         "when": "editorTextFocus && vim.active && vim.overrideCopy && vim.use<D-c> && !inDebugRepl"
     },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findWithSelection"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-editor.action.toggleScreenReaderAccessibilityMode",
+        "when": "accessibilityHelpIsShown"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "shift+cmd+space",
+        "command": "-editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "shift+space",
+        "command": "editor.action.triggerParameterHints"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "-extension.vim_ctrl+home",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "-quickInput.first",
+        "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "notebook.cell.openFailureActions",
+        "when": "notebookCellFocused && notebookCellHasErrorDiagnostics && !notebookCellEditorFocused"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "workbench.action.terminal.showQuickFixes",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "acceptSelectedCodeAction",
+        "when": "codeActionMenuVisible"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "editor.changeDropType",
+        "when": "dropWidgetVisible"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "editor.changePasteType",
+        "when": "pasteWidgetVisible"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "problems.action.showQuickFixes",
+        "when": "problemFocus"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "workbench.action.chat.openModePicker",
+        "when": "chatIsEnabled && inChatInput && chatLocation == 'panel'"
+    },
+    {
+        "key": "cmd+k f",
+        "command": "-workbench.action.closeFolder",
+        "when": "emptyWorkspaceSupport && !isSessionsWindow && workbenchState != 'empty'"
+    },
+    {
+        "key": "cmd+k f",
+        "command": "workbench.action.quickTextSearch"
+    },
+    {
+        "key": "cmd+home f",
+        "command": "workbench.action.quickTextSearch"
+    },
+    {
+        "key": "cmd+home d",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "cmd+home",
+        "command": "-workbench.action.terminal.scrollToTopAccessibleView",
+        "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+    },
+    {
+        "key": "cmd+home",
+        "command": "-workbench.action.terminal.scrollToTop",
+        "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "cmd+home",
+        "command": "-notebook.focusTop",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "cmd+home m",
+        "command": "workbench.actions.view.problems"
+    },
+    {
+        "key": "cmd+home cmd+s",
+        "command": "workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "cmd+home cmd+z",
+        "command": "workbench.action.toggleZenMode",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "cmd+home z",
+        "command": "center-editor-window.center",
+        "when": "editorTextFocus || findWidgetVisible"
+    },
+    {
+        "key": "cmd+home z",
+        "command": "center-editor-window.center",
+        "when": "editorTextFocus || findWidgetVisible"
+    },
+    {
+        "key": "cmd+home cmd+v",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "cmd+home v",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "cmd+home b",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus"
+    },
+    {
+        "key": "cmd+home shift+cmd+b",
+        "command": "editor.action.goToReferences",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+home cmd+b",
+        "command": "editor.action.goToImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus"
+    }
 ]
 
