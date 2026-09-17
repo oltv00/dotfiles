@@ -1,0 +1,5 @@
+# resterm
+*.db
+*.db-shm
+*.db-wal
+

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if defaults read -g AppleInterfaceStyle 2>/dev/null | grep -qx 'Dark'; then
+  config_dir="$HOME/dotfiles/resterm-dark"
+else
+  config_dir="$HOME/dotfiles/resterm-light"
+fi
+
+resterm_bin="$(brew --prefix --installed resterm 2>/dev/null)/bin/resterm"
+
+if [ ! -x "$resterm_bin" ]; then
+  printf '%s\n' 'resterm wrapper: Homebrew Resterm binary not found.' >&2
+  exit 127
+fi
+
+exec env RESTERM_CONFIG_DIR="$config_dir" "$resterm_bin" "$@"
+

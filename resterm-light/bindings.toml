@@ -1,0 +1,4 @@
+[bindings]
+toggle_response_split_vertical = ["g shift+v"]
+toggle_response_split_horizontal = ["g shift+h"]
+

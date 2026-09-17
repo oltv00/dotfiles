@@ -1,0 +1,281 @@
+[metadata]
+name = "Catppuccin Mocha"
+description = "Catppuccin Mocha palette for dark terminals"
+author = "Catppuccin palette adapted for Resterm"
+version = "1.0.0"
+tags = ["dark", "catppuccin", "mocha"]
+
+[styles.header]
+foreground = "#cdd6f4"
+background = "#1e1e2e"
+
+[styles.header_title]
+foreground = "#cba6f7"
+bold = true
+
+[styles.header_value]
+foreground = "#cdd6f4"
+
+[styles.header_label]
+foreground = "#a6adc8"
+
+[styles.header_icon]
+foreground = "#89b4fa"
+
+[styles.header_help]
+foreground = "#a6e3a1"
+bold = true
+
+[styles.header_warn]
+foreground = "#f9e2af"
+
+[styles.header_brand]
+foreground = "#1e1e2e"
+background = "#cba6f7"
+bold = true
+
+[styles.header_separator]
+foreground = "#45475a"
+
+[styles.browser_border]
+border_color = "#45475a"
+
+[styles.editor_border]
+border_color = "#89b4fa"
+
+[styles.response_border]
+border_color = "#94e2d5"
+
+[styles.navigator_title]
+foreground = "#cdd6f4"
+
+[styles.navigator_title_selected]
+foreground = "#1e1e2e"
+background = "#89b4fa"
+bold = true
+
+[styles.navigator_subtitle]
+foreground = "#a6adc8"
+
+[styles.navigator_subtitle_selected]
+foreground = "#1e1e2e"
+background = "#89b4fa"
+
+[styles.navigator_badge]
+foreground = "#cba6f7"
+bold = true
+
+[styles.navigator_tag]
+foreground = "#a6adc8"
+
+[styles.app_frame]
+border_color = "#313244"
+
+[styles.command_bar]
+foreground = "#cdd6f4"
+background = "#181825"
+
+[styles.command_bar_hint]
+foreground = "#a6e3a1"
+bold = true
+
+[styles.status_bar]
+foreground = "#cdd6f4"
+background = "#181825"
+
+[styles.status_bar_info]
+foreground = "#a6adc8"
+
+[styles.status_bar_key]
+foreground = "#fab387"
+bold = true
+
+[styles.status_bar_value]
+foreground = "#cdd6f4"
+
+[status_bar]
+base = "#181825"
+
+[status_bar.info]
+foreground = "#1e1e2e"
+background = "#89b4fa"
+
+[status_bar.warn]
+foreground = "#1e1e2e"
+background = "#f9e2af"
+
+[status_bar.error]
+foreground = "#1e1e2e"
+background = "#f38ba8"
+
+[status_bar.success]
+foreground = "#1e1e2e"
+background = "#a6e3a1"
+
+[status_bar.tests_pass]
+foreground = "#1e1e2e"
+background = "#94e2d5"
+
+[status_bar.tests_fail]
+foreground = "#1e1e2e"
+background = "#f38ba8"
+
+[status_bar.tests_error]
+foreground = "#1e1e2e"
+background = "#cba6f7"
+
+[status_bar.file]
+foreground = "#cdd6f4"
+background = "#313244"
+
+[status_bar.focus]
+foreground = "#1e1e2e"
+background = "#a6adc8"
+
+[status_bar.mode]
+foreground = "#1e1e2e"
+background = "#cba6f7"
+
+[status_bar.zoom]
+foreground = "#1e1e2e"
+background = "#89dceb"
+
+[styles.tab_active]
+foreground = "#1e1e2e"
+background = "#89b4fa"
+bold = true
+
+[styles.tab_inactive]
+foreground = "#a6adc8"
+
+[styles.command_divider]
+foreground = "#45475a"
+
+[styles.notification]
+foreground = "#cdd6f4"
+background = "#313244"
+
+[styles.error]
+foreground = "#f38ba8"
+
+[styles.success]
+foreground = "#a6e3a1"
+
+[styles.list_item_title]
+foreground = "#cdd6f4"
+
+[styles.list_item_description]
+foreground = "#a6adc8"
+
+[styles.list_item_selected_title]
+foreground = "#1e1e2e"
+background = "#89b4fa"
+bold = true
+
+[styles.list_item_selected_description]
+foreground = "#1e1e2e"
+background = "#89dceb"
+
+[styles.list_item_dimmed_title]
+foreground = "#6c7086"
+
+[styles.list_item_dimmed_description]
+foreground = "#585b70"
+
+[styles.list_item_filter_match]
+foreground = "#fab387"
+underline = true
+
+[styles.pane_title]
+foreground = "#bac2de"
+bold = true
+
+[styles.pane_title_file]
+foreground = "#89b4fa"
+bold = true
+
+[styles.pane_title_requests]
+foreground = "#94e2d5"
+bold = true
+
+[styles.pane_divider]
+foreground = "#45475a"
+
+[styles.response_content]
+foreground = "#cdd6f4"
+
+[styles.response_content_raw]
+foreground = "#bac2de"
+
+[styles.response_content_headers]
+foreground = "#a6e3a1"
+
+[styles.response_search_highlight]
+foreground = "#1e1e2e"
+background = "#f9e2af"
+
+[styles.response_search_highlight_active]
+foreground = "#1e1e2e"
+background = "#fab387"
+bold = true
+
+[styles.response_selection]
+background = "#45475a"
+
+[styles.response_cursor]
+foreground = "#89b4fa"
+bold = true
+
+[styles.stream_timestamp]
+foreground = "#a6adc8"
+
+[styles.stream_direction_send]
+foreground = "#f38ba8"
+bold = true
+
+[styles.stream_direction_receive]
+foreground = "#a6e3a1"
+bold = true
+
+[styles.stream_direction_info]
+foreground = "#f9e2af"
+bold = true
+
+[styles.stream_error]
+foreground = "#f38ba8"
+bold = true
+
+[colors]
+pane_border_focus_file = "#89b4fa"
+pane_border_focus_requests = "#a6e3a1"
+pane_border_focus_editor = "#cba6f7"
+pane_border_focus_response = "#94e2d5"
+pane_active_foreground = "#cdd6f4"
+method_get = "#a6e3a1"
+method_post = "#89b4fa"
+method_put = "#f9e2af"
+method_patch = "#fab387"
+method_delete = "#f38ba8"
+method_head = "#cba6f7"
+method_options = "#89dceb"
+method_grpc = "#cba6f7"
+method_ws = "#94e2d5"
+
+[editor_metadata]
+comment_marker = "#6c7086"
+directive_default = "#cba6f7"
+value = "#a6e3a1"
+setting_key = "#fab387"
+setting_value = "#f9e2af"
+request_line = "#89b4fa"
+request_separator = "#45475a"
+rts_keyword_default = "#cba6f7"
+rts_keyword_decl = "#89b4fa"
+rts_keyword_control = "#f9e2af"
+rts_keyword_literal = "#a6e3a1"
+rts_keyword_logical = "#f38ba8"
+
+[[command_segments]]
+background = "#313244"
+key = "#a6e3a1"
+text = "#bac2de"
