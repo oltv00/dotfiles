@@ -199,7 +199,7 @@
     },
 
     {
-        "key": "cmd+k h",
+        "key": "cmd+home left",
         "command": "views.moveViewLeft",
         "when": "focusedView != ''"
     },
@@ -441,6 +441,73 @@
     {
         "key": "cmd+home w",
         "command": "workbench.action.closeEditorsInGroup"
+    },
+    {
+        "key": "cmd+home down",
+        "command": "workbench.action.moveActiveEditorGroupDown"
+    },
+    {
+        "key": "cmd+home down",
+        "command": "views.moveViewDown",
+        "when": "focusedView != ''"
+    },
+    {
+        "key": "cmd+k down",
+        "command": "-views.moveViewDown",
+        "when": "focusedView != ''"
+    },
+    {
+        "key": "cmd+k down",
+        "command": "-workbench.action.moveActiveEditorGroupDown"
+    },
+    {
+        "key": "cmd+home up",
+        "command": "workbench.action.moveActiveEditorGroupUp"
+    },
+    {
+        "key": "cmd+home up",
+        "command": "views.moveViewUp",
+        "when": "focusedView != ''"
+    },
+    {
+        "key": "cmd+k up",
+        "command": "-views.moveViewUp",
+        "when": "focusedView != ''"
+    },
+    {
+        "key": "cmd+k up",
+        "command": "-workbench.action.moveActiveEditorGroupUp"
+    },
+    {
+        "key": "cmd+home left",
+        "command": "workbench.action.moveActiveEditorGroupLeft"
+    },
+    {
+        "key": "cmd+k left",
+        "command": "-workbench.action.moveActiveEditorGroupLeft"
+    },
+    {
+        "key": "cmd+home right",
+        "command": "workbench.action.moveActiveEditorGroupRight"
+    },
+    {
+        "key": "cmd+home right",
+        "command": "views.moveViewRight",
+        "when": "focusedView != ''"
+    },
+    {
+        "key": "cmd+k right",
+        "command": "-views.moveViewRight",
+        "when": "focusedView != ''"
+    },
+    {
+        "key": "cmd+k right",
+        "command": "-workbench.action.moveActiveEditorGroupRight"
+    },
+    {
+        "key": "shift+cmd+home",
+        "command": "breadcrumbs.focusAndSelect",
+        "when": "breadcrumbsPossible && breadcrumbsVisible"
     }
 ]
 
