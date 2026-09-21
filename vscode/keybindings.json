@@ -508,6 +508,16 @@
         "key": "shift+cmd+home",
         "command": "breadcrumbs.focusAndSelect",
         "when": "breadcrumbsPossible && breadcrumbsVisible"
+    },
+    {
+        "key": "cmd+home delete",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "cmd+home pagedown",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
     }
 ]
 
