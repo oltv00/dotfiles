@@ -518,6 +518,42 @@
         "key": "cmd+home pagedown",
         "command": "workbench.action.navigateForward",
         "when": "canNavigateForward"
+    },
+    {
+        "key": "cmd+home r",
+        "command": "git.revertSelectedRanges",
+        "when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'"
+    },
+    {
+        "key": "cmd+home cmd+g",
+        "command": "githd.diffUncommittedFile"
+    },
+    {
+        "key": "cmd+k cmd+g",
+        "command": "githd.diffUncommittedFile"
+    },
+    {
+        "key": "cmd+k s",
+        "command": "-workbench.action.files.saveWithoutFormatting"
+    },
+    {
+        "key": "cmd+home s",
+        "command": "workbench.action.focusOtherSideEditor",
+        "when": "sideBySideEditorActive || textCompareEditorActive"
+    },
+    {
+        "key": "cmd+k s",
+        "command": "workbench.action.focusOtherSideEditor",
+        "when": "sideBySideEditorActive || textCompareEditorActive"
+    },
+    {
+        "key": "cmd+home cmd+r",
+        "command": "diffEditor.revert",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "cmd+home e",
+        "command": "workbench.action.showCommands"
     }
 ]
 
