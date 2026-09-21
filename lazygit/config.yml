@@ -2,7 +2,9 @@ gui:
   theme:
     selectedLineBgColor:
       - reverse
-  screenMode: half
+  screenMode: normal
+  commitHashLength: 0
+  commitAuthorShortLength: 1
 git:
   autoFetch: false
 
