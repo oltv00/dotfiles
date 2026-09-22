@@ -109,8 +109,12 @@ keybind = super+shift+k=scroll_page_lines:-3
 keybind = super+ctrl+d=scroll_page_lines:12
 keybind = super+ctrl+u=scroll_page_lines:-12
 
-keybind = super+page_down=scroll_page_fractional:0.75
-keybind = super+page_up=scroll_page_fractional:-0.75
+# Disabled due to tmux using
+# keybind = super+page_down=scroll_page_fractional:0.75
+# keybind = super+page_up=scroll_page_fractional:-0.75
+
+keybind = super+page_up=text:\x1b[99~
+keybind = super+page_down=text:\x1b[100~
 
 ## split
 keybind = super+d=new_split:right
