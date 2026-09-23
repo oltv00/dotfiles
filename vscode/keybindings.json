@@ -554,6 +554,11 @@
     {
         "key": "cmd+home e",
         "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "cmd+home cmd+f",
+        "command": "workbench.action.toggleMaximizeEditorGroup",
+        "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
     }
 ]
 

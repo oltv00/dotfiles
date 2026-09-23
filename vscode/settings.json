@@ -98,6 +98,7 @@
     "editor.scrollbar.vertical": "hidden",
     "editor.lineNumbers": "relative",
     "editor.renderControlCharacters": false,
+    "editor.parameterHints.enabled": false,
 
     // files
     "files.autoSave": "afterDelay",
