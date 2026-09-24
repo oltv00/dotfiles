@@ -559,6 +559,36 @@
         "key": "cmd+home cmd+f",
         "command": "workbench.action.toggleMaximizeEditorGroup",
         "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
+    },
+    {
+        "key": "shift+space",
+        "command": "closeParameterHints",
+        "when": "editorFocus && parameterHintsVisible"
+    },
+    {
+        "key": "cmd+home cmd+d",
+        "command": "editor.debug.action.showDebugHover",
+        "when": "editorTextFocus && inDebugMode"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "editorScroll",
+        "args": {
+          "to": "up",
+          "by": "line",
+          "value": 5
+    },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "editorScroll",
+        "args": {
+          "to": "down",
+          "by": "line",
+          "value": 5
+    },
+        "when": "editorTextFocus"
     }
 ]
 
