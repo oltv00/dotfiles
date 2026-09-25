@@ -589,6 +589,29 @@
           "value": 5
     },
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+cmd+n",
+        "command": "-welcome.showNewFileEntries",
+        "when": "!isSessionsWindow"
+    },
+    {
+        "key": "cmd+home n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "cmd+k n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "alt+cmd+down",
+        "command": "-extension.vim_cmd+alt+down",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "alt+cmd+up",
+        "command": "-extension.vim_cmd+alt+up",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
     }
 ]
 
