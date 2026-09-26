@@ -113,6 +113,9 @@ keybind = super+ctrl+u=scroll_page_lines:-12
 # keybind = super+page_down=scroll_page_fractional:0.75
 # keybind = super+page_up=scroll_page_fractional:-0.75
 
+# Dedicated sequences consumed by tmux copy mode.
+keybind = super+arrow_up=text:\x1b[97~
+keybind = super+arrow_down=text:\x1b[98~
 keybind = super+page_up=text:\x1b[99~
 keybind = super+page_down=text:\x1b[100~
 
@@ -123,4 +126,3 @@ keybind = super+shift+d=new_split:down
 ## new line
 # keybind = shift+enter=text:\n
 keybind = shift+enter=text:\x1b\r
-
