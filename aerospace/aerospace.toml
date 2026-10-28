@@ -122,8 +122,8 @@ on-mode-changed = []
     alt-q = 'focus left'
     alt-w = 'focus right'
 
-    alt-shift-q = 'join-with left'
-    alt-shift-w = 'join-with right'
+    alt-shift-q = 'move left'
+    alt-shift-w = 'move right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
     alt-shift-h = 'move left'
